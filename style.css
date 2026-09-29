@@ -1,0 +1,1001 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: blanchedalmond;
+  line-height: 1.4;
+  font-family: "Times New Roman", serif;
+  color: #111;
+  overflow-x: hidden;
+}
+
+#principal {
+  width: 100%;
+  min-width: 0;
+  max-width: 1200px;
+  margin: 0 auto 20px;
+  overflow-x: hidden;
+}
+
+main {
+  width: calc(100% - 160px);
+  margin: 30px auto 0;
+  background-color: rgba(255, 255, 255, 0.855);
+  padding: 2px 0 30px;
+}
+
+.top-bar-container {
+  position: relative;
+  width: 100%;
+  min-height: 34px;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+#top-bar2 {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  margin: 0;
+  min-height: 34px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.855);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 12px;
+}
+
+#top-bar2 p {
+  margin: 0;
+}
+
+#top-bar {
+  position: absolute;
+  inset: 0 auto 0 0;
+  z-index: 2;
+  width: 31%;
+  min-height: 34px;
+  height: 34px;
+  margin: 0;
+  background-color: #363638;
+  overflow: hidden;
+}
+
+#top-bar::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  bottom: -1px;
+  width: 0;
+  height: 0;
+  border-bottom: 36px solid rgba(255, 255, 255, 0.98);
+  border-left: 31px solid #363638;
+}
+
+header,
+header section {
+  width: 100%;
+  min-width: 0;
+}
+
+header section {
+  position: relative;
+  min-height: 140px;
+  padding: 8px 30px;
+  background-color: #363638;
+  display: flex;
+  align-items: center;
+  gap: clamp(20px, 5vw, 80px);
+}
+
+#logoimagem {
+  flex: 0 1 auto;
+  width: auto;
+  height: 130px;
+  max-width: 48%;
+  margin: 0;
+  object-fit: contain;
+  object-position: left center;
+}
+
+#telefone {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 7px;
+}
+
+.telefone-linha {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  font-size: 17px;
+  white-space: nowrap;
+}
+
+.telefone-linha span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#zap {
+  flex: 0 0 auto;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  margin: 0;
+}
+
+header > .top-bar-container:last-child {
+  min-height: 54px;
+  background-color: rgba(255, 255, 255, 0.855);
+  overflow: visible; /* permite que o menu aberto ultrapasse a altura da barra */
+  isolation: auto;
+}
+
+#top-bar4 {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  width: 100%;
+  min-height: 54px;
+  margin: 0;
+  padding: 0 28px 0 32%;
+  background-color: rgba(255, 255, 255, 0.855);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#top-bar3 {
+  position: absolute;
+  inset: 0 auto 0 0;
+  z-index: 3;
+  width: 31%;
+  min-height: 54px;
+  margin: 0;
+  background-color: #363638;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+#top-bar3::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  width: 0;
+  height: 0;
+  border-bottom: 56px solid transparent;
+  border-right: 31px solid white;
+}
+
+#top-bar3 hr {
+  display: none;
+}
+
+nav {
+  position: relative;
+  z-index: 4;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+#menu ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu li {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+#menu ul li a {
+  display: block;
+  width: 100%;
+  padding: 8px 9px;
+  color: black;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+#menu ul li a:hover {
+  background-color: #e5e5e5;
+  border-bottom: 2px solid black;
+}
+
+.titulo {
+  font-weight: normal;
+  margin: 33px 10px 20px;
+}
+
+.veiculos {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+}
+
+.veiculos button {
+  padding: 12px;
+  border-color: #363638;
+  border-radius: 30%;
+  background-color: white;
+  transition: background 0.2s;
+}
+
+.veiculos button:hover {
+  background-color: #e5e5e5;
+}
+
+#lista-carros {
+  background: url(./assets/Painelc.png) no-repeat center / 98%;
+  height: 500px;
+}
+
+.Projetos {
+  width: 280px;
+  max-width: 30%;
+  height: auto;
+  object-fit: contain;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 10px 300px auto 30px;
+}
+
+.div1,
+.div2 {
+  width: 45%;
+  background: white;
+  text-align: justify;
+}
+
+.tp {
+  margin: 5px 30px 22px 40px;
+}
+
+.Icone {
+  width: 18%;
+  max-width: 55px;
+  height: auto;
+  vertical-align: middle;
+}
+
+#conhecimento {
+  width: 13%;
+  max-width: 55px;
+  height: auto;
+  vertical-align: middle;
+}
+
+#escrever {
+  width: 17%;
+  max-width: 55px;
+  height: auto;
+  vertical-align: middle;
+}
+
+#cadeado {
+  width: 18%;
+}
+
+.containerservico {
+  width: calc(100% - 350px);
+  margin: 10px 300px 10px 50px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  text-align: justify;
+  background-color: white;
+}
+
+.containerservico p {
+  margin: 12px;
+}
+
+.containerservico img {
+  flex: 0 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.fotos {
+  width: 250px;
+  max-width: 40%;
+}
+
+#especializado {
+  width: calc(100% - 750px);
+  background-color: white;
+  margin: auto 700px auto 50px;
+}
+
+#especializado ul {
+  list-style: disc;
+  padding-top: 5px;
+  line-height: 1.6;
+}
+
+#GOL {
+  width: 250px;
+  height: 470px;
+  margin: -490px auto auto 790px;
+  background: url("./assets/gol.png") no-repeat center / cover;
+}
+
+#Galaxie {
+  width: calc(100% - 100px);
+  height: 228px;
+  margin: 10px 50px auto;
+  background: url("./assets/Galaxie2.png") no-repeat center / cover;
+}
+
+#oficina {
+  width: 550px;
+  max-width: 100%;
+  height: 615px;
+  margin: -700px auto auto 488px;
+  background: url("./assets/oficina.png") no-repeat center / cover;
+}
+
+#fusca {
+  margin: auto auto auto 790px;
+  transform: translateY(-2500px);
+  height: 400px;
+  width: 250px;
+  background: url("./assets/fusca.png") no-repeat -4px center / cover;
+}
+
+#fusca2 {
+  margin-left: 788px;
+  height: 400px;
+  width: 315px;
+  background: url("./assets/satsumagt.png") no-repeat -12px center / cover;
+  transform: scale(0.8);
+  transform-origin: top left;
+  position: relative;
+  top: -1500px;
+  margin-bottom: -760px;
+}
+
+.slide-carros {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: -100%;
+  width: 70%;
+  max-width: 900px;
+  height: 100dvh;
+  overflow-y: auto;
+  background: #f5f1e8;
+  border-left: 2px solid #333;
+  transition: right 0.5s ease;
+  padding: 30px;
+}
+
+.slide-carros.aberto {
+  right: 0;
+}
+
+.slide-carros > button {
+  float: right;
+  border: 1px solid #333;
+  background: #363638;
+  color: white;
+  padding: 6px 10px;
+  cursor: pointer;
+  font: inherit;
+}
+
+legend {
+  font-size: 25px;
+}
+
+form {
+  margin: 30px 50px auto;
+  font-size: 18px;
+}
+
+fieldset {
+  background: #f7f2e7;
+  border-color: #5d5d5d;
+}
+
+input {
+  font-size: 15px;
+  width: 255px;
+  max-width: 100%;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  border: none;
+  border-bottom: 1px solid black;
+  background: transparent;
+  font-family: "Times New Roman", serif;
+}
+
+textarea {
+  margin-top: 5px;
+  width: 500px;
+  max-width: 100%;
+  background: transparent;
+  font-family: "Times New Roman", serif;
+  font-size: 15px;
+}
+
+#detalhemain {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  font-size: 14px;
+  padding: 0 50px;
+}
+
+#butao {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  background: rgb(216, 171, 103);
+  border: 1px solid #444;
+  padding: 5px;
+  font-family: "Times New Roman", serif;
+  font-size: 18px;
+  transition: 0.2s;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background: #70706f;
+}
+
+.mensagem {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  line-height: 2.2;
+}
+
+#voltar {
+  text-decoration: none;
+  color: black;
+  background-color: rgb(216, 171, 103);
+  padding: 13px;
+  font-size: 18px;
+  border: 1px solid black;
+}
+
+#voltar:hover {
+  transition: 0.2s;
+  background-color: #606060;
+}
+
+footer {
+  background-color: #363638;
+  min-height: 35px;
+  padding: 8px 15px;
+  color: white;
+  text-align: center;
+}
+
+#motor {
+  background-image: url("./assets/boxer.png");
+  width: 250px;
+  height: 600px;
+  margin-left: 790px;
+  margin-top: -750px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -125px center;
+}
+
+@media (max-width: 1213px) {
+  #GOL,
+  #motor,
+  #fusca,
+  #fusca2,
+  #oficina {
+    display: none;
+  }
+}
+
+@media (max-width: 1150px) {
+  main {
+    width: calc(100% - 40px);
+  }
+
+  header section {
+    min-height: 125px;
+    padding: 8px 20px;
+    gap: 24px;
+  }
+
+  #logoimagem {
+    height: 115px;
+    max-width: 44%;
+  }
+
+  #telefone {
+    gap: 5px;
+  }
+
+  .telefone-linha {
+    font-size: 15px;
+  }
+
+  #zap {
+    width: 27px;
+    height: 27px;
+  }
+
+  #top-bar4 {
+    padding-left: 31%;
+    padding-right: 12px;
+  }
+
+  #menu ul {
+    gap: 0;
+  }
+
+  #menu ul li a {
+    padding: 7px 6px;
+    font-size: 14px;
+  }
+
+  .Projetos {
+    width: 30%;
+  }
+
+  .container {
+    margin-right: 30px;
+  }
+
+  .containerservico {
+    width: calc(100% - 100px);
+    margin-right: 50px;
+  }
+
+  #especializado {
+    width: calc(100% - 100px);
+    margin-right: 50px;
+  }
+}
+
+.menu-mobile {
+  display: none;
+}
+
+@media (max-width: 674px) {
+  body {
+    font-size: 16px;
+  }
+
+  #principal {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  header,
+  header > *,
+  main,
+  footer {
+    max-width: 100%;
+  }
+
+  .top-bar-container:first-child {
+    min-height: 34px;
+  }
+
+  #top-bar {
+    width: 25%;
+    min-height: 34px;
+    height: 34px;
+  }
+
+  #top-bar::after {
+    border-top-width: 36px;
+    border-left-width: 24px;
+  }
+
+  #top-bar2 {
+    min-height: 34px;
+    justify-content: flex-end;
+    padding: 0 10px 0 25%;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  header section {
+    min-height: 100px;
+    padding: 8px 12px;
+    gap: 10px;
+  }
+
+  #logoimagem {
+    flex: 0 1 48%;
+    width: 48%;
+    height: auto;
+    max-width: 220px;
+    margin: 0;
+  }
+
+  #telefone {
+    flex: 1 1 52%;
+    min-width: 0;
+    margin: 0;
+    gap: 4px;
+    align-items: flex-start;
+  }
+
+  .telefone-linha {
+    width: 100%;
+    gap: 5px;
+    font-size: 11px;
+  }
+
+  #zap {
+    width: 22px;
+    height: 22px;
+  }
+
+  header > .top-bar-container:last-child {
+    min-height: 52px;
+    overflow: visible;
+  }
+
+  #top-bar3 {
+    display: none;
+  }
+
+  #top-bar4 {
+    min-height: 52px;
+    padding: 6px 10px;
+    justify-content: flex-end;
+  }
+
+  nav#menu {
+    display: none;
+  }
+
+  .menu-mobile {
+    position: relative;
+    z-index: 1201;
+    display: block;
+  }
+
+  .menu-mobile summary {
+    list-style: none;
+    display: block;
+    padding: 8px 12px;
+    border: 1px solid #363638;
+    background: #793434;
+    color: #111;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+  }
+
+  .menu-mobile summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .menu-mobile-list {
+    position: absolute;
+    z-index: 1202;
+    top: calc(100% + 6px);
+    right: 0;
+    width: min(90vw, 300px);
+    padding: 6px !important;
+    margin: 0 !important;
+    background: #888888;
+    border: 1px solid #363638;
+    display: flex !important;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0 !important;
+    list-style: none;
+  }
+
+  .menu-mobile-list li {
+    width: 100%;
+    min-height: 0;
+    display: block;
+  }
+
+  .menu-mobile-list li a {
+    display: block;
+    width: 100%;
+    padding: 11px 10px;
+    font-size: 16px;
+    color: #111;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+
+  .menu-mobile-list li a:hover {
+    background: #e5e5e5;
+  }
+
+  main {
+    width: calc(100% - 20px);
+    margin-top: 15px;
+    padding-top: 1px;
+  }
+
+  .titulo {
+    font-size: 25px;
+    margin: 25px 12px 15px;
+  }
+
+  .veiculos {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .Projetos {
+    width: min(90%, 280px);
+    max-width: 100%;
+  }
+
+  .container {
+    display: block;
+    margin: 10px 12px;
+  }
+
+  .div1,
+  .div2 {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 2px;
+    padding-top: 1px;
+  }
+
+  .tp {
+    margin: 5px 20px 22px;
+  }
+
+  .Icone,
+  #conhecimento,
+  #escrever {
+    width: 38px;
+    max-width: 38px;
+  }
+
+  #GOL,
+  #motor,
+  #fusca,
+  #fusca2,
+  #oficina {
+    display: none;
+  }
+
+  .containerservico {
+    width: calc(100% - 24px);
+    margin: 10px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    text-align: justify;
+    padding: 10px;
+  }
+
+  .containerservico p {
+    margin: 5px 8px 10px;
+  }
+
+  .fotos {
+    width: 100%;
+    max-width: 250px;
+    align-self: center;
+  }
+
+  #especializado {
+    width: calc(100% - 24px);
+    margin: 10px 12px;
+  }
+
+  #especializado ul {
+    padding: 10px 25px 10px 40px;
+  }
+
+  #Galaxie {
+    width: calc(100% - 24px);
+    height: 150px;
+    margin: 10px 12px;
+    background-size: contain;
+  }
+
+  .slide-carros {
+    width: 100%;
+    max-width: none;
+    padding: 20px 15px;
+    border-left: none;
+  }
+
+  .slide-carros h2 {
+    margin-top: 15px;
+  }
+
+  form {
+    margin: 20px 12px;
+    font-size: 17px;
+  }
+
+  fieldset {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    padding: 12px;
+  }
+
+  legend {
+    font-size: 21px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #detalhemain {
+    display: block;
+    padding: 0 12px;
+  }
+
+  #detalhe1,
+  #detalhe2 {
+    margin-left: 0 !important;
+  }
+
+  #detalhe2 p {
+    margin: 4px 0;
+  }
+
+  #butao {
+    flex-wrap: wrap;
+  }
+
+  input[type="submit"],
+  input[type="reset"] {
+    width: 120px;
+  }
+
+  footer {
+    font-size: 13px;
+    min-height: 42px;
+  }
+}
+
+.menu-toggle {
+  display: none;
+  border: 1px solid #363638;
+  background: #363638;
+  color: white;
+  padding: 8px 12px;
+  font: inherit;
+  cursor: pointer;
+  position: relative;
+  z-index: 10000;
+}
+
+@media (max-width: 760px) and (min-width: 639px) {
+  #top-bar2 {
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: 34%;
+    padding-right: 10px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 674px) {
+  #top-bar2 {
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: 28%;
+    padding-right: 8px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  #top-bar4 {
+    position: relative;
+    z-index: 9998;
+  }
+
+  nav#menu {
+    position: relative;
+    z-index: 10000;
+    width: auto;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .menu-toggle {
+    display: block;
+    pointer-events: auto;
+  }
+
+  #menu ul#menu-list {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    top: calc(100% + 6px);
+    right: 0;
+    width: min(90vw, 300px);
+    padding: 6px;
+    margin: 6px 0 0;
+    background: #f7f2e7;
+    border: 1px solid #363638;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0;
+    list-style: none;
+  }
+
+  #menu ul#menu-list.aberto {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  #menu li {
+    width: 100%;
+    min-height: 0;
+    display: block;
+  }
+
+  #menu ul#menu-list li a {
+    display: block;
+    width: 100%;
+    padding: 11px 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+}
+
+.menu-mobile {
+  display: none !important;
+}

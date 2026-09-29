@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oficina</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="icon" href="data:," />
+  </head>
+  <body>
+    <div id="principal">
+      <header>
+        <div class="top-bar-container">
+          <div id="top-bar"></div>
+
+          <div id="top-bar2">
+            <p>Funcionamento Segunda-Sexta 8:00 - 18:00</p>
+          </div>
+        </div>
+        <section>
+          <img src="./assets/logo.PNG" alt="LogodaOficína" id="logoimagem" />
+          <div id="telefone">
+            <div class="telefone-linha">&#9743; <span>(55) 99xxx790</span></div>
+            <div class="telefone-linha">
+              <img src="./assets/zap.PNG" alt="WhatsApp" id="zap" /><span
+                >(55) 55 9xxx790</span
+              >
+            </div>
+          </div>
+        </section>
+        <div class="top-bar-container">
+          <div id="top-bar3"><hr /></div>
+          <div id="top-bar4">
+            <nav id="menu">
+              <button
+                class="menu-toggle"
+                type="button"
+                aria-controls="menu-list"
+                aria-expanded="false"
+                onclick="
+                  const m = document.getElementById('menu-list')
+                  const a = !m.classList.contains('aberto')
+                  m.classList.toggle('aberto', a)
+                  this.setAttribute('aria-expanded', String(a))
+                "
+              >
+                Menu ☰
+              </button>
+              <ul id="menu-list">
+                <li>
+                  <a href="#" style="border-bottom: 2px solid black">Home</a>
+                </li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="formulario.html">Agendar online</a></li>
+                <li><a href="saiba.html">Saiba mais sobre oficinas</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main>
+        <h1 style="text-align: center; font-size: 40px; text-decoration: underline; font-weight: normal;"
+        >Wolfer Auto Classics Reparos</h1>
+        <h1 class="titulo">Alguns dos modelos que preservamos</h1>
+
+        <div class="veiculos">
+          <img
+            src="./assets/Brasilha.png"
+            alt="Brasilha1978"
+            class="Projetos"
+          />
+
+          <img src="./assets/Opala.png" alt="Opala" class="Projetos" />
+
+          <img src="./assets/Galaxie.png" alt="Galaxie" class="Projetos" />
+        </div>
+        <div class="veiculos">
+          <button onclick="mostrarCarros()">Ver mais veículos</button>
+        </div>
+
+        <div id="maisCarros" class="slide-carros">
+          <button onclick="fecharCarros()">✕</button>
+
+          <h2>Mais veículos</h2>
+
+          <div id="lista-carros">
+            <!-- novos carros -->
+          </div>
+        </div>
+
+        <h2 class="titulo">Por que nos escolher?</h2>
+        <div class="container">
+          <div class="div1">
+            <h3 class="titulo">
+              <img
+                src="./assets/icon2.png"
+                alt="Icone1"
+                class="Icone"
+                align="middle"
+              />
+              Técnicos especializados
+            </h3>
+
+            <p class="tp">
+              Nossos mecânicos são especializados tanto em tecnologias clássicas
+              quanto modernas. Embora nossa paixão e foco sejam a linha Old
+              School, atendemos seu veículo novo com a mesma excelência.
+              <b>Atenção</b>: Não trabalhamos com veículos elétricos ou
+              híbridos.
+            </p>
+          </div>
+
+          <div class="div2">
+            <h3 class="titulo">
+              <img
+                src="./assets/lampada.png"
+                alt="lampada"
+                id="conhecimento"
+                align="middle"
+              />
+              Conhecimento
+            </h3>
+
+            <p class="tp">
+              Se você busca uma oficina onde seu veículo antigo será tratado com
+              o respeito que merece, aqui é o lugar certo. Contamos com a
+              tradição e o conhecimento acumulado desde 1979 para entregar um
+              serviço de excelência pelo melhor custo-benefício.
+            </p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="div1">
+            <h3 class="titulo">
+              <img
+                src="./assets/cadeado2.png"
+                alt="cadeado"
+                id="conhecimento"
+                align="middle"
+              />Confidencialidade
+            </h3>
+
+            <p class="tp">
+              Respeitamos a sua privacidade. Estamos 100% em conformidade com a
+              LGPD para garantir que você informe seus dados pessoais com total
+              segurança e tranquilidade.
+            </p>
+          </div>
+
+          <div class="div2">
+            <h3 class="titulo">
+              <img
+                src="./assets/escrever2.PNG"
+                alt="escre"
+                id="escrever"
+              />Contabilidade
+            </h3>
+
+            <p class="tp">
+              Tradição também é facilitar para o cliente. Desde 1979, oferecemos
+              as melhores condições do mercado: parcelamento em até 10x sem
+              juros, opção de boleto bancário e diversas outras formas de
+              pagamento para sua comodidade.
+            </p>
+          </div>
+        </div>
+
+        <div id="GOL"></div>
+
+        <br /><br /><br />
+      </main>
+    </div>
+    <footer>Copyright © 2026 Wolfer Auto Classics Reparos</footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

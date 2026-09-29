@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oficina/Serviços</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+
+    <link rel="icon" href="data:," />
+  </head>
+  <body>
+    <div id="principal">
+      <header>
+        <div class="top-bar-container">
+          <div id="top-bar"></div>
+
+          <div id="top-bar2">
+            <p>Funcionamento Segunda-Sexta 8:00 - 18:00</p>
+          </div>
+        </div>
+        <section>
+          <img src="./assets/logo.PNG" alt="LogodaOficína" id="logoimagem" />
+          <div id="telefone">
+            <div class="telefone-linha">&#9743; <span>(55) 99xxx790</span></div>
+            <div class="telefone-linha">
+              <img src="./assets/zap.PNG" alt="WhatsApp" id="zap" /><span
+                >(55) 55 9xxx790</span
+              >
+            </div>
+          </div>
+        </section>
+        <div class="top-bar-container">
+          <div id="top-bar3"><hr /></div>
+          <div id="top-bar4">
+            <nav id="menu">
+              <button
+                class="menu-toggle"
+                type="button"
+                aria-controls="menu-list"
+                aria-expanded="false"
+                onclick="
+                  const m = document.getElementById('menu-list')
+                  const a = !m.classList.contains('aberto')
+                  m.classList.toggle('aberto', a)
+                  this.setAttribute('aria-expanded', String(a))
+                "
+              >
+                Menu ☰
+              </button>
+              <ul id="menu-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li>
+                  <a href="#" style="border-bottom: 2px solid black"
+                    >Serviços</a
+                  >
+                </li>
+                <li><a href="formulario.html">Agendar online</a></li>
+                <li><a href="saiba.html">Saiba mais sobre oficinas</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main>
+        <h1 class="titulo">Alguns de Nossos Serviços</h1>
+
+        <h2 class="titulo">Carburador</h2>
+
+        <div class="containerservico">
+          <img src="./assets/Carburador.png" class="fotos" alt="carburador" />
+
+          <p>
+            Embora seja um serviço cada vez mais raro no mercado, na Wolfer Auto
+            Classics dominamos a manutenção de carburadores. Oferecemos desde a
+            limpeza e regulagem padrão até acertos específicos para melhor
+            desempenho ou economia.
+          </p>
+        </div>
+
+        <h2 class="titulo">Injeção eletrônica</h2>
+
+        <div class="containerservico">
+          <img src="./assets/Eletronica.png" class="fotos" alt="Eletrônica" />
+
+          <p>
+            Na Wolfer Auto Classics, fazemos a modernização do sistema de
+            injeção de combustível e ar do seu veículo, eliminando de vez as
+            dores de cabeça com o platinado e o carburador.
+          </p>
+        </div>
+
+        <h2 class="titulo">Lanternagem</h2>
+
+        <div class="containerservico">
+          <img src="./assets/lanternagem.png" class="fotos" alt="lanternagem" />
+
+          <p>
+            Na Wolfer Auto Classics, realizamos serviços selecionados de
+            lanternagem e fabricamos peças selecionadas que não são mais feitas
+            oficialmente pela fábrica.
+          </p>
+        </div>
+
+        <h2 class="titulo">Chicote elétrico</h2>
+
+        <div class="containerservico">
+          <img src="./assets/chicote.png" class="fotos" alt="chicote" />
+
+          <p>
+            Na Wolfer Auto Classics, somos especializados na eletrônica
+            automotiva de veículos antigos, resolvendo com precisão um dos
+            problemas que podem ser difíceis para os proprietários de clássicos.
+          </p>
+        </div>
+        <div id="motor"></div>
+
+        <br /><br /><br /><br /><br /><br /><br /><br /><br />
+      </main>
+    </div>
+    <footer>Copyright © 2026 Wolfer Auto Classics Reparos</footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

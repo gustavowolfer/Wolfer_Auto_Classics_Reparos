@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oficina/Saiba</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="icon" href="data:," />
+  </head>
+  <body>
+    <div id="principal">
+      <header>
+        <div class="top-bar-container">
+          <div id="top-bar"></div>
+
+          <div id="top-bar2">
+            <p>Funcionamento Segunda-Sexta 8:00 - 18:00</p>
+          </div>
+        </div>
+        <section>
+          <img src="./assets/logo.PNG" alt="LogodaOficína" id="logoimagem" />
+          <div id="telefone">
+            <div class="telefone-linha">&#9743; <span>(55) 99xxx790</span></div>
+            <div class="telefone-linha">
+              <img src="./assets/zap.PNG" alt="WhatsApp" id="zap" /><span
+                >(55) 55 9xxx790</span
+              >
+            </div>
+          </div>
+        </section>
+        <div class="top-bar-container">
+          <div id="top-bar3"><hr /></div>
+          <div id="top-bar4">
+            <nav id="menu">
+              <button
+                class="menu-toggle"
+                type="button"
+                aria-controls="menu-list"
+                aria-expanded="false"
+                onclick="
+                  const m = document.getElementById('menu-list')
+                  const a = !m.classList.contains('aberto')
+                  m.classList.toggle('aberto', a)
+                  this.setAttribute('aria-expanded', String(a))
+                "
+              >
+                Menu ☰
+              </button>
+              <ul id="menu-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="formulario.html">Agendar online</a></li>
+                <li>
+                  <a href="#" style="border-bottom: 2px solid black"
+                    >Saiba mais sobre oficinas</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main>
+        <h2 class="titulo">Oque são?</h2>
+
+        <div class="containerservico">
+          <p>
+            As oficinas mecânicas automotivas são estabelecimentos
+            especializados na manutenção preventiva e corretiva de veículos
+            automotores, cuja função é realizar diagnósticos técnicos, reparos
+            em motores, sistemas de freios, suspensão, transmissão e componentes
+            elétricos em veículos (Rigotto, 2019). A oficina mecânica é
+            responsável pela garantia da segurança e funcionamento eficiente do
+            veículo.
+          </p>
+        </div>
+
+        <div class="containerservico">
+          <p>
+            Para Rigotto (2019), as oficinas mecânicas proporcionam serviços de
+            qualidade e confiabilidade no setor automotivo, sendo uma
+            alternativa às concessionárias, atendendo às necessidades de
+            manutenção, reparo e personalização dos veículos de clientes.
+          </p>
+        </div>
+
+        <h2 class="titulo">Como andam?</h2>
+
+        <div class="containerservico">
+          <p>
+            Com a evolução tecnológica da indústria automobilística, essas
+            oficinas passaram por profundas transformações, deixando de ser
+            espaços exclusivamente mecânicos para se tornarem centros técnicos
+            que envolvem eletrônica embarcada, sistemas computadorizados e
+            diagnósticos digitais.(Nascimento; Silva 2021) O avanço dos sistemas
+            de injeção eletrônica, sensores, módulos eletrônicos e veículos
+            híbridos exige constante atualização profissional e investimento em
+            tecnologia.
+          </p>
+        </div>
+
+        <div class="containerservico">
+          <p>
+            Também, as oficinas devem seguir normas relacionadas à segurança do
+            trabalho como o uso de EPIs (Alves et al 2025) e o descarte de
+            resíduos (óleos, baterias, ferragens, pneus…), a preocupação
+            ambiental está alinhada às práticas sustentáveis e à legislação
+            vigente. (Silva, 2022)
+          </p>
+        </div>
+
+        <h2 class="titulo">No país</h2>
+
+        <div class="containerservico">
+          <p>
+            Embora houvesse um crescimento significativo em 2020, as oficinas
+            regrediram devido aos imprevistos de 2021. A pandemia da COVID-19
+            afetou o setor. Mais da metade dos gestores dizem estarem com
+            complicações para encontrar peças e optam por pedir para os clientes
+            procurarem antes de realizar o serviço (Nascimento; Silva, 2021). Um
+            dos exemplos de peças são os semicondutores que entre 2020 e 2022
+            ficaram em baixa oferta, valorizando o mercado de usados. (Valladão;
+            Ignácio , 2024)
+          </p>
+        </div>
+
+        <div class="containerservico">
+          <p>
+            Além desse item, o preço se intensifica a cada ano, isso é outro
+            aspecto que abala os empresários, pois é difícil manter clientes com
+            preços aumentando aos poucos. Desse jeito, para os administradores
+            fica complicado investir em seu negócio, o trabalho que era na
+            maioria das vezes manual, vem sendo substituído por máquinas
+            modernas e ferramentas que favorecem a manutenção dos veículos e
+            redução de custos.(Nascimento; Silva 2021)
+          </p>
+        </div>
+
+        <h2 class="titulo">Automação</h2>
+
+        <div class="containerservico">
+          <p>
+            Aplicando ás oficinas mecânicas, o conceito de Lamb (2015) sobre
+            automação demonstra a substituição do diagnóstico manual por
+            sistemas microcontrolados Em vez de depender apenas da percepção do
+            técnico, plataformas lógicas processam dados de sensores e executam
+            testes automáticos, garantindo maior precisão e rapidez na
+            manutenção. Desse modo, as oficinas vêm modernizando suas operações,
+            e muitas atividades que antes eram realizadas pelo homem passam a
+            ser desempenhadas pelas máquinas.
+          </p>
+        </div>
+        <div class="containerservico">
+          <p>
+            Tarefas mais fatigantes passam a ser realizadas de maneira mais leve
+            com a ajuda das máquinas. Em certos casos, há a substituição do
+            homem pela máquina. As máquinas não ficam doentes, mas, caso
+            estrague, podem gerar despesas para os empresários. Atualmente,
+            existem diversos equipamentos automatizados que, por meio de
+            comandos, desempenham diferentes tarefas (Nascimento; Silva, 2021).
+          </p>
+        </div>
+
+        <h2 class="titulo">Tecnologia e Diagnóstico Automotivo</h2>
+
+        <div class="containerservico">
+          <p>
+            Existem alguns tipos de manutenção automotiva, como a preditiva,
+            sendo uma das abordagens mais modernas, baseada na monitoração
+            contínua das condições dos componentes e na análise de dados para
+            prever falhas. Diferente da corretiva, que atua após a pane, e da
+            preventiva, que se baseia em intervalos constantes de tempo, a
+            manutenção preditiva utiliza tecnologia de sensores e inteligência
+            de dados para determinar o momento exato da intervenção, garantindo
+            eficiência, segurança e serviços rápidos (Bordim et al., 2025).
+          </p>
+        </div>
+
+        <div class="containerservico">
+          <p>
+            Na prática, Barros e Nascimento (2025) acreditam que a aplicação das
+            tecnologias de diagnóstico automotivo vem sendo essencial para o
+            avanço dos procedimentos de reparo. Cada ferramenta atua de forma
+            integrada, permitindo que o técnico acompanhe, em tempo real, a
+            condição e o desempenho dos principais sistemas do veículo e
+            identifique tendências de desgaste com base em informações
+            precisas.(Bordim et al., 2025).
+          </p>
+        </div>
+
+        <h2 class="titulo">Equipamentos de alinhamento digital</h2>
+
+        <div class="containerservico">
+          <p>
+            No caso do alinhamento automotivo, o Arduino Uno e o Nano são
+            utilizados para fazer o cálculo da cambagem, caster e convergência.
+            O equipamento de alinhamento de direção veicular executa a medição
+            por meio de um sensor de inclinação que realiza a leitura dos eixos
+            X e Y em relação à gravidade, permitindo a medição da cambagem e do
+            caster. A medição da convergência é feita por meio de sensores
+            ultrassônicos e todas as medidas são demonstradas por um display LCD
+            (Liquid Crystal Display) (Oliveira; Gomes, 2018).
+          </p>
+        </div>
+
+        <div class="containerservico">
+          <p>
+            Para Oliveira e Gomes (2018), o Arduino é uma plataforma de
+            prototipagem que contém um microcontrolador programável em linguagem
+            C++ simplificada, sendo bastante versátil para a mecânica. No
+            contexto open source, tornou-se bastante conhecida na área de
+            eletrônica por ser fácil de utilizar, bastando usar um cabo USB para
+            carregar um novo algoritmo. Atualmente, no mercado, existem vários
+            modelos, sendo os mais comuns o Uno, Duemilanove, Leonardo e Mega,
+            cada um com funções específicas (Machado, 2015).
+          </p>
+        </div>
+
+        <h2 class="titulo">Sustentabilidade</h2>
+
+        <div class="containerservico">
+          <p>
+            A gestão e a logística de resíduos sólidos são aspectos a serem
+            considerados pelas oficinas automotivas, que realizam diferentes
+            procedimentos durante as manutenções automotivas de rotina,
+            ocasionando diferentes tipos de resíduos sólidos (Nascimento, 2026).
+            Esses resíduos precisam de identificação e destinação adequada para
+            não ocasionar danos ao meio ambiente e à saúde pública. Nas
+            oficinas, estão presentes certos resíduos considerados contaminantes
+            e nocivos que, se não forem administrados corretamente, podem
+            prejudicar o meio ambiente, ocasionando danos irreparáveis (Silva,
+            2022).
+          </p>
+        </div>
+
+        <div class="containerservico">
+          <p>
+            Diante disso, verificam-se os possíveis impactos que podem ser
+            ocasionados pela realização dessas atividades, sendo necessário
+            seguir as normas vigentes estabelecidas no país, principalmente a
+            Política Nacional de Resíduos Sólidos (PNRS), Lei Federal nº 12.305,
+            de 2010, no intuito de atender à coleta seletiva e ao cumprimento da
+            logística reversa nas oficinas mecânicas e, assim, proporcionar o
+            aperfeiçoamento de seu funcionamento, visando alcançar a
+            sustentabilidade empresarial (SILVA, 2022).
+          </p>
+        </div>
+
+        <h2 class="titulo">Segurança no trabalho</h2>
+
+        <div class="containerservico">
+          <p>
+            Nas oficinas mecânicas não é diferente. Os riscos devem ser
+            considerados e podem estar vinculados desde acidentes com
+            ferramentas até acidentes de maior severidade, como, por exemplo, o
+            manuseio incorreto do equipamento intitulado Cyborg, que é um
+            alinhador hidráulico utilizado para fazer a lanternagem do veículo
+            (SILVA, 2024).
+          </p>
+        </div>
+
+        <div class="containerservico">
+          <p>
+            Dentre as normas, há a NR 06, que trata dos Equipamentos de Proteção
+            Individual (EPIs), sendo indispensáveis em uma oficina mecânica,
+            pois é por meio deles que se proporciona maior segurança e
+            eficiência nos serviços prestados pelo colaborador. A norma enfatiza
+            a obrigação do empregador de fornecer o equipamento gratuitamente,
+            contribuindo para a redução dos riscos. (ALVES et al., 2025).
+          </p>
+        </div>
+
+        <h2 class="titulo">Gestão</h2>
+
+        <div class="containerservico">
+          <p>
+            A gestão eficiente é um fator determinante para a sustentabilidade
+            de uma oficina mecânica. Podendo enfrentar diversas dificuldades de
+            gerenciamento, como gestão financeira, gestão para a segurança do
+            trabalho, sustentabilidade, automação, empreendedorismo,
+            tecnologias, equipamentos, entre outras, que comprometem sua
+            eficiência e a satisfação dos clientes.(Silva et al., 2024).
+          </p>
+        </div>
+
+        <div class="containerservico">
+          <p>
+            No cenário atual, em que cada vez mais há competitividade entre as
+            instituições, somente aquelas que conseguirem inovar, se reinventar
+            e usar a tecnologia disponível para a gestão, permanecerão no
+            mercado. Para Pires (2024), o uso das tecnologias é fundamental para
+            a prosperidade da empresa e contribui para aumentar a
+            competitividade. É fato que o processo de produção já não pode ser
+            pensado como tempos atrás.
+          </p>
+        </div>
+
+        <div id="fusca"></div>
+        <div id="fusca2"></div>
+      </main>
+    </div>
+    <footer>Copyright © 2026 Wolfer Auto Classics Reparos</footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

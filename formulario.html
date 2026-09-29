@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oficina/Agendar</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="icon" href="data:," />
+  </head>
+  <body>
+    <div id="principal">
+      <header>
+        <div class="top-bar-container">
+          <div id="top-bar"></div>
+
+          <div id="top-bar2">
+            <p>Funcionamento Segunda-Sexta 8:00 - 18:00</p>
+          </div>
+        </div>
+        <section>
+          <img src="./assets/logo.PNG" alt="LogodaOficína" id="logoimagem" />
+          <div id="telefone">
+            <div class="telefone-linha">&#9743; <span>(55) 99xxx790</span></div>
+            <div class="telefone-linha">
+              <img src="./assets/zap.PNG" alt="WhatsApp" id="zap" /><span
+                >(55) 55 9xxx790</span
+              >
+            </div>
+          </div>
+        </section>
+        <div class="top-bar-container">
+          <div id="top-bar3"><hr /></div>
+          <div id="top-bar4">
+            <nav id="menu">
+              <button
+                class="menu-toggle"
+                type="button"
+                aria-controls="menu-list"
+                aria-expanded="false"
+                onclick="
+                  const m = document.getElementById('menu-list')
+                  const a = !m.classList.contains('aberto')
+                  m.classList.toggle('aberto', a)
+                  this.setAttribute('aria-expanded', String(a))
+                "
+              >
+                Menu ☰
+              </button>
+              <ul id="menu-list">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li>
+                  <a href="#" style="border-bottom: 2px solid black"
+                    >Agendar online</a
+                  >
+                </li>
+                <li><a href="saiba.html">Saiba mais sobre oficinas</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main style="background-color: #f7f2e7">
+        <form action="php.php" method="post">
+          <div id="detalhemain">
+            <div id="detalhe1">
+              <p>WOLFER AUTO CLASSICS REPAROS</p>
+
+              <p>ORDEM DE SERVIÇO Nº: <span id="os">Número</span></p>
+            </div>
+
+            <div id="detalhe2">
+              <p>Data: <span id="data">Data</span></p>
+              <p>Hora: <span id="hora">Hora</span></p>
+            </div>
+          </div>
+          <br />
+          <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="nome">Nome Completo:</label><br />
+            <input
+              type="text"
+              id="nome"
+              required
+              placeholder="Informe seu nome completo"
+              name="Nome"
+              maxlength="40"
+            /><br />
+
+            <label for="N">Telefone:</label><br />
+            <input
+              type="tel"
+              id="N"
+              required
+              placeholder="Número de contato"
+              name="Contato"
+              maxlength="11"
+            /><br />
+
+            <label for="w">Whatszap:</label><br />
+            <input
+              type="tel"
+              id="w"
+              placeholder="Número de whatszap"
+              name="zap"
+              maxlength="11"
+            /><br />
+
+            <label for="E">Email:</label><br />
+            <input
+              type="email"
+              id="E"
+              placeholder="Informe seu Email"
+              name="Email"
+              maxlength="40"
+            /><br />
+          </fieldset>
+          <br />
+
+          <fieldset>
+            <legend>Informações do Veículo</legend>
+
+            <label for="marca">Marca:</label>
+            <input
+              type="text"
+              name="MarcadC"
+              maxlength="30"
+              id="marca"
+              placeholder="Volksvagem"
+              required
+            /><br />
+
+            <label for="m">Modelo:</label>
+            <input
+              type="text"
+              name="Modelo"
+              maxlength="30"
+              placeholder="GOL S"
+              id="m"
+              required
+            /><br />
+
+            <label for="A">Ano:</label>
+            <input
+              type="text"
+              name="AnoCarro"
+              maxlength="30"
+              placeholder="1982"
+              id="A"
+              required
+            /><br />
+
+            <label for="M">Motor:</label>
+            <input
+              type="text"
+              name="Motor"
+              maxlength="30"
+              placeholder="Boxer 1.6 Gasolina"
+              id="M"
+              required
+            /><br />
+
+            <label>Informe oque você percebe de defeito:</label><br />
+            <textarea
+              name="descricao"
+              placeholder="Informe o motivo do agendamento/defeito do veículo"
+              rows="6"
+              cols="4"
+              maxlength="500"
+              required
+            ></textarea
+            ><br />
+          </fieldset>
+          <br />
+
+          <div id="butao">
+            <input type="reset" value="Limpar" /><br />
+            <input type="submit" value="Agendar" />
+          </div>
+          <br /><br />
+        </form>
+      </main>
+    </div>
+    <footer>Copyright © 2026 Wolfer Auto Classics Reparos</footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

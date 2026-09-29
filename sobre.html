@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oficina/Sobre nós</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="icon" href="data:," />
+  </head>
+  <body>
+    <div id="principal">
+      <header>
+        <div class="top-bar-container">
+          <div id="top-bar"></div>
+
+          <div id="top-bar2">
+            <p>Funcionamento Segunda-Sexta 8:00 - 18:00</p>
+          </div>
+        </div>
+        <section>
+          <img src="./assets/logo.PNG" alt="LogodaOficína" id="logoimagem" />
+          <div id="telefone">
+            <div class="telefone-linha">&#9743; <span>(55) 99xxx790</span></div>
+            <div class="telefone-linha">
+              <img src="./assets/zap.PNG" alt="WhatsApp" id="zap" /><span
+                >(55) 55 9xxx790</span
+              >
+            </div>
+          </div>
+        </section>
+        <div class="top-bar-container">
+          <div id="top-bar3"><hr /></div>
+          <div id="top-bar4">
+            <nav id="menu">
+              <button
+                class="menu-toggle"
+                type="button"
+                aria-controls="menu-list"
+                aria-expanded="false"
+                onclick="
+                  const m = document.getElementById('menu-list')
+                  const a = !m.classList.contains('aberto')
+                  m.classList.toggle('aberto', a)
+                  this.setAttribute('aria-expanded', String(a))
+                "
+              >
+                Menu ☰
+              </button>
+              <ul id="menu-list">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                  <a href="#" style="border-bottom: 2px solid black"
+                    >Sobre nós</a
+                  >
+                </li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="formulario.html">Agendar online</a></li>
+                <li><a href="saiba.html">Saiba mais sobre oficinas</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div id="Galaxie"></div>
+
+        <h2 class="titulo">Nossa História</h2>
+
+        <div class="containerservico">
+          <p>
+            Fundada em 1979, a Wolfer Auto Classics nasceu com o objetivo de
+            preservar veículos que marcaram gerações. Nossa oficína reúne
+            conhecimento técnico, ferramentas adequadas e respeito pelas
+            especificações originais de cada modelo, oferecendo serviços
+            especializados para veículos nacionais e importados antigos
+            selecionados.
+          </p>
+        </div>
+
+        <h2 class="titulo">Nossa Filosofia</h2>
+
+        <div class="containerservico">
+          <p>
+            Acreditamos que um automóvel faz parte da história de seu
+            proprietário. Por isso, realizamos cada serviço com atenção aos
+            detalhes, priorizando qualidade, segurança e originalidade sempre
+            que possível.
+          </p>
+        </div>
+
+        <h2 class="titulo">Nossas Especialidades</h2>
+
+        <div id="especializado">
+          <ul type="square">
+            <br />
+            <li>Mecânica de carros antigos</li>
+            <li>Carburadores</li>
+            <li>Injeção eletrônica adaptada</li>
+            <li>Chicotes elétricos</li>
+            <li>Lanternagem</li>
+            <li>Regulagem de motores</li>
+            <li>Freios</li>
+            <li>Suspensão</li>
+            <li>Alinhamento</li>
+            <li>Revisões completas</li>
+            <li>Defeitos crônicos de cada modelo</li>
+            <br />
+          </ul>
+        </div>
+
+        <h2 class="titulo">Marcas que trabalhamos</h2>
+
+        <div id="especializado">
+          <ul type="square">
+            <br />
+            <li>Volkswagen</li>
+            <li>Chevrolet</li>
+            <li>Ford/Willys</li>
+            <li>Nissan/Datsun</li>
+            <li>Fiat</li>
+            <li>Dodge/Chrysler</li>
+            <li>Puma</li>
+            <li>Gurgel</li>
+            <li>Toyota</li>
+            <li>DKW/Vemag</li>
+            <li>Lada</li>
+            <br />
+          </ul>
+        </div>
+        <br /><br />
+
+        <div id="oficina"></div>
+
+        <br />
+        <h2 class="titulo">Nosso Compromisso</h2>
+
+        <div class="containerservico">
+          <p>
+            Trabalhamos para que cada veículo mantenha sua identidade,
+            valorizando componentes originais e utilizando peças de qualidade
+            quando a reposição é necessária.
+          </p>
+        </div>
+        <br />
+
+        <p
+          align="center"
+          style="
+            background-color: white;
+            border: none;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+          "
+        >
+          <i
+            >Cada automóvel possui uma história. Nosso trabalho é garantir que
+            ela continue sendo escrita.</i
+          >
+        </p>
+        <br /><br />
+      </main>
+    </div>
+    <footer>Copyright © 2026 Wolfer Auto Classics Reparos</footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
