@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1 class="notranslate"> 🛠️ Wolfer Auto Classics Reparos</h1>
+<h1 translate="no"> 🛠️ Wolfer Auto Classics Reparos</h1>
 
 ### Oficina especializada em carros antigos
 
@@ -26,15 +26,15 @@ O projeto foi desenvolvido com uma identidade visual inspirada em **oficinas cl�
 
 As seguintes tecnologias e ferramentas foram utilizadas no desenvolvimento do projeto:
 
-| Tecnologia / Ferramenta              | Utilização                                                      |
-| ------------------------------------ | --------------------------------------------------------------- |
-| **HTML**                             | Estrutura das páginas                                           |
-| **CSS**                              | Estilização e identidade visual                                 |
-| **JavaScript**                       | Interações e funcionalidades                                    |
-| **PHP**                              | <span class="notranslate">Recursos dinâmicos do projeto </span> |
-| **Git / GitHub**                     | Controle e hospedagem do código                                 |
-| **Canva**                            | Criação e edição de elementos visuais                           |
-| **Ferramenta de Captura do Windows** | Capturas de tela e registros do projeto                         |
+| Tecnologia / Ferramenta              | Utilização                                                 |
+| ------------------------------------ | ---------------------------------------------------------- |
+| **HTML**                             | Estrutura das páginas                                      |
+| **CSS**                              | Estilização e identidade visual                            |
+| **JavaScript**                       | Interações e funcionalidades                               |
+| **PHP**                              | <span translate="no">Recursos dinâmicos do projeto </span> |
+| **Git / GitHub**                     | Controle e hospedagem do código                            |
+| **Canva**                            | Criação e edição de elementos visuais                      |
+| **Ferramenta de Captura do Windows** | Capturas de tela e registros do projeto                    |
 
 ---
 
