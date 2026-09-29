@@ -4,5 +4,10 @@
       "runtime": "vercel-php@0.9.0"
     }
   },
-  "rewrites": [{ "source": "/api/(.*)", "destination": "/api/php.php" }]
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/php.php"
+    }
+  ]
 }

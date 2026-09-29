@@ -123,7 +123,7 @@
          </p>
               <br>
                 
-             <p align="center"> <a href="index.html" id="voltar" >Voltar</a></p>
+             <p align="center"> <a href="/" id="voltar" >Voltar</a></p>
               
             <br><br>
     </main>
