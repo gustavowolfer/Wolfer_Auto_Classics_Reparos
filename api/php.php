@@ -93,7 +93,7 @@
 
              <?php  echo "<p class='mensagem'><b>Nome</b>: $nome</p>";
                     echo "<p class='mensagem'><b>Telefone</b>: $contato</p>";
-                    echo "<p class='mensagem'><b>Whatszap</b>: $zap</p>";
+                    echo "<p class='mensagem'><b>WhatsApp</b>: $zap</p>";
                     echo "<p class='mensagem'><b>Email</b>: $email</p>";
                    
             ?>
