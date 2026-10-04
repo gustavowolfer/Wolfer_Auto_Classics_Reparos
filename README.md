@@ -42,7 +42,7 @@ As seguintes tecnologias e ferramentas foram utilizadas no desenvolvimento do pr
 
 <div align="center">
 
-<img src="assets/preview.png" alt="Prévia do site Wolfer Auto Classics Reparos" width="100%">
+<img src="./assets/preview.PNG" alt="Prévia do site" width="100%" />
 
 </div>
 
