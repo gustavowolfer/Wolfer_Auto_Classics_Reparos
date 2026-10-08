@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oficína/Cliente info.</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
   </head>
   <body>
   <div id="principal">
@@ -15,10 +15,10 @@
       <div id="top-bar2"><p>Funcionamento Segunda-Sexta 8:00 - 18:00</p></div>
     </div>
     <section>
-        <img src="./assets/logo.PNG" alt="LogodaOficína" id="logoimagem"/>
+        <img src="../assets/logo.PNG" alt="LogodaOficína" id="logoimagem"/>
         <div id="telefone">
           <div class="telefone-linha">&#9743; <span>(55) 99xxx790</span></div>
-          <div class="telefone-linha"><img src="./assets/zap.PNG" alt="WhatsApp" id="zap"/><span>(55) 55 9xxx790</span></div>
+          <div class="telefone-linha"><img src="../assets/zap.PNG" alt="WhatsApp" id="zap"/><span>(55) 55 9xxx790</span></div>
         </div>
 
     </section>
@@ -41,12 +41,12 @@
                 Menu ☰
               </button>
               <ul id="menu-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre nós</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="formulario.html">Agendar online</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../sobre.html">Sobre nós</a></li>
+                <li><a href="../servicos.html">Serviços</a></li>
+                <li><a href="../formulario.html">Agendar online</a></li>
                 <li>
-                  <a href="saiba.html"
+                  <a href="../saiba.html"
                     >Saiba mais sobre oficinas</a
                   >
                 </li>
@@ -119,7 +119,7 @@
         <p align="center" style="background-color: #363638;
          color:white;
          font-size:18px;">Entraremos em contato em até
-            2 dias úteis (por telefone, Whatszap ou Email).
+            2 dias úteis (por telefone, WhatsApp ou Email).
          </p>
               <br>
                 

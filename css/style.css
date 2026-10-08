@@ -257,7 +257,7 @@ nav {
 }
 
 #lista-carros {
-  background: url(./assets/Painelc.png) no-repeat center / 98%;
+  background: url(../assets/Painelc.png) no-repeat center / 98%;
   height: 500px;
 }
 
@@ -353,14 +353,14 @@ nav {
   width: 250px;
   height: 470px;
   margin: -490px auto auto 790px;
-  background: url("./assets/gol.png") no-repeat center / cover;
+  background: url("../assets/gol.png") no-repeat center / cover;
 }
 
 #Galaxie {
   width: calc(100% - 100px);
   height: 228px;
   margin: 10px 50px auto;
-  background: url("./assets/Galaxie2.png") no-repeat center / cover;
+  background: url("../assets/Galaxie2.png") no-repeat center / cover;
 }
 
 #oficina {
@@ -368,7 +368,7 @@ nav {
   max-width: 100%;
   height: 615px;
   margin: -700px auto auto 488px;
-  background: url("./assets/oficina.png") no-repeat center / cover;
+  background: url("../assets/oficina.png") no-repeat center / cover;
 }
 
 #fusca {
@@ -376,14 +376,14 @@ nav {
   transform: translateY(-2500px);
   height: 400px;
   width: 250px;
-  background: url("./assets/fusca.png") no-repeat -4px center / cover;
+  background: url("../assets/fusca.png") no-repeat -4px center / cover;
 }
 
 #fusca2 {
   margin-left: 788px;
   height: 400px;
   width: 315px;
-  background: url("./assets/satsumagt.png") no-repeat -12px center / cover;
+  background: url("../assets/satsumagt.png") no-repeat -12px center / cover;
   transform: scale(0.8);
   transform-origin: top left;
   position: relative;
