@@ -516,7 +516,7 @@ footer {
 }
 
 #motor {
-  background-image: url("./assets/boxer.png");
+  background-image: url("../assets/boxer.png");
   width: 250px;
   height: 600px;
   margin-left: 790px;
